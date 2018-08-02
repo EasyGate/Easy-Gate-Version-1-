@@ -11,7 +11,9 @@ import UIKit
 class AirportHomeViewController: UIViewController {
     
    // MARK: - Properites
-     var CollectionViewNamesArray = ["Passenger Terminal" , "Cargo Terminal" , "General Aviation" , "General Info"]
+     var a = "nuyhbtgrvfecdw"
+    let kk = PassengerTerminalViewController()
+     var CollectionViewNamesArray = ["Passenger Terminal" , "Cargo Terminal" , "General Aviation" , "General Info" , "Currency Conversion" , "Attraction"]
     
     // MARK: - IBOutlet
     @IBOutlet weak var AirportHomeColliction: UICollectionView!
@@ -25,11 +27,30 @@ class AirportHomeViewController: UIViewController {
      let controller = sb.instantiateViewController(withIdentifier: "Home")
      self.navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func SkySskyscannercanner(_ sender: AnyObject) {
+        if let url = URL(string: "https://www.skyscanner.net") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func FlightRadar(_ sender: UIButton) {
+        if let url = URL(string: "https://www.flightradar24.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func Uber(_ sender: UIButton) {
+        if let url = URL(string: "https://www.uber.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
    // MARK: - ViewLifeCycle
      override func viewDidLoad() {
         super.viewDidLoad()
        AirportHomeColliction.delegate = self
        AirportHomeColliction.dataSource = self
+        AirportHomeColliction.isScrollEnabled = false
      }
 }
 
@@ -77,10 +98,21 @@ extension AirportHomeViewController : UICollectionViewDataSource , UICollectionV
         else if indexPath.row == 2 {
             controller = sb.instantiateViewController(withIdentifier: "GeneralAviation")
         }
-        else{
+        else if indexPath.row == 3 {
             controller = sb.instantiateViewController(withIdentifier: "GeneralInfo")
+        }
+        else if indexPath.row == 4 {
+            controller = sb.instantiateViewController(withIdentifier: "CurrencyConversion")
+        }
+        else{
+            controller = sb.instantiateViewController(withIdentifier: "PassengerTerminal")
+            if collectionView.indexPathForItem(at: "5") {
+                kk.TopLabel.text = a
+            }
+            
         }
            self.navigationController?.pushViewController(controller, animated: true)
          }
 }
+
 

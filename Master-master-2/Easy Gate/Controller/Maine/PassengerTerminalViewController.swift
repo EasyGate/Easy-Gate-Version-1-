@@ -12,6 +12,7 @@ class PassengerTerminalViewController: UIViewController {
     
      // MARK: - IBOutlet
      @IBOutlet weak var PassengerTerminalCollection: UICollectionView!
+     @IBOutlet weak var TopLabel: ScalableLabel!
     
    // MARK: - IBOutlet
     @IBAction func Back(_ sender: UIButton) {

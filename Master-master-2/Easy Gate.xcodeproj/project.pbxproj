@@ -83,6 +83,11 @@
 		82B447AF20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B447AE20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift */; };
 		82B447B120FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B447B020FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift */; };
 		82B447B320FCC9CA004E6445 /* AirportHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B447B220FCC9CA004E6445 /* AirportHomeCollectionViewCell.xib */; };
+		82EA6E562111C45200A285BA /* FromePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA6E552111C45200A285BA /* FromePopUpViewController.swift */; };
+		82EA6E582111C47000A285BA /* ToPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA6E572111C47000A285BA /* ToPopUpViewController.swift */; };
+		82EA6E5A2111C6ED00A285BA /* FromTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA6E592111C6ED00A285BA /* FromTableViewCell.swift */; };
+		82EA6E5C2111CACE00A285BA /* CurrencyConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA6E5B2111CACE00A285BA /* CurrencyConversionViewController.swift */; };
+		82EA6E602111D9BD00A285BA /* ToTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EA6E5F2111D9BD00A285BA /* ToTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +170,11 @@
 		82B447AE20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsSearchResulteControllerTableViewCell.swift; sourceTree = "<group>"; };
 		82B447B020FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		82B447B220FCC9CA004E6445 /* AirportHomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		82EA6E552111C45200A285BA /* FromePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromePopUpViewController.swift; sourceTree = "<group>"; };
+		82EA6E572111C47000A285BA /* ToPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPopUpViewController.swift; sourceTree = "<group>"; };
+		82EA6E592111C6ED00A285BA /* FromTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromTableViewCell.swift; sourceTree = "<group>"; };
+		82EA6E5B2111CACE00A285BA /* CurrencyConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewController.swift; sourceTree = "<group>"; };
+		82EA6E5F2111D9BD00A285BA /* ToTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToTableViewCell.swift; sourceTree = "<group>"; };
 		D5D121EB534B3D22C7855C2E /* Pods-Easy Gate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Gate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Gate/Pods-Easy Gate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -383,6 +393,8 @@
 				8217E4FE20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift */,
 				8217E50020FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift */,
 				821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */,
+				82EA6E592111C6ED00A285BA /* FromTableViewCell.swift */,
+				82EA6E5F2111D9BD00A285BA /* ToTableViewCell.swift */,
 			);
 			name = TableViewCells;
 			path = "New Group1";
@@ -520,6 +532,9 @@
 				82007E6820FB72EE009A1EF4 /* GeneralAviationViewController.swift */,
 				82007E6A20FB732B009A1EF4 /* AllCompaniesViewController.swift */,
 				821FA73C21072BA700F9A408 /* PopUpViewController.swift */,
+				82EA6E552111C45200A285BA /* FromePopUpViewController.swift */,
+				82EA6E572111C47000A285BA /* ToPopUpViewController.swift */,
+				82EA6E5B2111CACE00A285BA /* CurrencyConversionViewController.swift */,
 			);
 			path = Maine;
 			sourceTree = "<group>";
@@ -717,6 +732,7 @@
 				82007E2120FB613E009A1EF4 /* TestProtocol.swift in Sources */,
 				82007E2520FB6166009A1EF4 /* FormItemKeyboardTypeEnum.swift in Sources */,
 				82007E2D20FB6204009A1EF4 /* UINavigationController+CATransition.swift in Sources */,
+				82EA6E602111D9BD00A285BA /* ToTableViewCell.swift in Sources */,
 				82007E0320FB5E1F009A1EF4 /* Example.swift in Sources */,
 				82007E1F20FB610A009A1EF4 /* NibLoadable.swift in Sources */,
 				82007DDF20FB595A009A1EF4 /* RealmManager.swift in Sources */,
@@ -746,11 +762,15 @@
 				82007E3920FB6235009A1EF4 /* UIImage+Gif.swift in Sources */,
 				8217E4FD20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift in Sources */,
 				82007E6B20FB732B009A1EF4 /* AllCompaniesViewController.swift in Sources */,
+				82EA6E5A2111C6ED00A285BA /* FromTableViewCell.swift in Sources */,
 				82007E3520FB6222009A1EF4 /* View+Shadow.swift in Sources */,
+				82EA6E5C2111CACE00A285BA /* CurrencyConversionViewController.swift in Sources */,
 				82007E5F20FB718A009A1EF4 /* HomeViewController.swift in Sources */,
 				82007E5B20FB675A009A1EF4 /* Splash.swift in Sources */,
+				82EA6E582111C47000A285BA /* ToPopUpViewController.swift in Sources */,
 				82007E4B20FB64C5009A1EF4 /* Loader.swift in Sources */,
 				821FA73B2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift in Sources */,
+				82EA6E562111C45200A285BA /* FromePopUpViewController.swift in Sources */,
 				82007E1A20FB6031009A1EF4 /* GlobalManager.swift in Sources */,
 				82007E0C20FB5EA6009A1EF4 /* ExampleService.swift in Sources */,
 				82007E6520FB7245009A1EF4 /* TerminalServicesViewController.swift in Sources */,

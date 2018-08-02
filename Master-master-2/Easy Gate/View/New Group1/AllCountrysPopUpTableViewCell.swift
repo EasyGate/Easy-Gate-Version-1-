@@ -12,6 +12,8 @@ class AllCountrysPopUpTableViewCell: UITableViewCell {
 
     @IBOutlet weak var CountryName: ScalableLabel!
   
+   
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
