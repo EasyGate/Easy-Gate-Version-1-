@@ -9,7 +9,7 @@
 import UIKit
 
 class AirportHomeViewController: UIViewController {
-    
+    //  public var aa = GlobalManager.sharedInstance.CollictionSelected
    // MARK: - Properites
      var a = "nuyhbtgrvfecdw"
     let kk = PassengerTerminalViewController()
@@ -105,10 +105,9 @@ extension AirportHomeViewController : UICollectionViewDataSource , UICollectionV
             controller = sb.instantiateViewController(withIdentifier: "CurrencyConversion")
         }
         else{
-            controller = sb.instantiateViewController(withIdentifier: "PassengerTerminal")
-            if collectionView.indexPathForItem(at: "5") {
-                kk.TopLabel.text = a
-            }
+            controller = sb.instantiateViewController(withIdentifier: "TerminalServicesD")
+            //aa = "Attraction"
+            GlobalManager.sharedInstance.CollictionSelected = "Attraction"
             
         }
            self.navigationController?.pushViewController(controller, animated: true)

@@ -9,19 +9,21 @@
 import UIKit
 
 class AllCompaniesViewController: UIViewController {
-    
+    //var a =  GlobalManager.sharedInstance.CollictionSelected
     // MARK: - IBOutlet
       @IBOutlet weak var AllCompaniesCollections: UICollectionView!
     
     // MARK: - IBAction
     @IBAction func Back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+        GlobalManager.sharedInstance.CollictionSelected = ""
     }
     
     @IBAction func Home(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Maine", bundle: nil)
         let controller = sb.instantiateViewController(withIdentifier: "Home")
         self.navigationController?.pushViewController(controller, animated: true)
+        GlobalManager.sharedInstance.CollictionSelected = ""
     }
   
      // MARK: - ViewLifeCycle
@@ -68,7 +70,12 @@ extension AllCompaniesViewController : UICollectionViewDataSource , UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Maine", bundle: nil)
-        let controller = sb.instantiateViewController(withIdentifier: "GeneralAviation")
+         var controller = sb.instantiateViewController(withIdentifier: "GeneralAviation")
+        if GlobalManager.sharedInstance.CollictionSelected == "Attraction" {
+             controller = sb.instantiateViewController(withIdentifier: "A")
+        }
+        else {
+             controller = sb.instantiateViewController(withIdentifier: "GeneralAviation") }
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }

@@ -74,9 +74,17 @@
 		82007E6720FB72A2009A1EF4 /* PassengerTerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82007E6620FB72A2009A1EF4 /* PassengerTerminalViewController.swift */; };
 		82007E6920FB72EE009A1EF4 /* GeneralAviationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82007E6820FB72EE009A1EF4 /* GeneralAviationViewController.swift */; };
 		82007E6B20FB732B009A1EF4 /* AllCompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82007E6A20FB732B009A1EF4 /* AllCompaniesViewController.swift */; };
+		8202AE992116F05800F5B4E5 /* CTPieSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8202AE982116F05800F5B4E5 /* CTPieSliceView.swift */; };
+		8202AE9B2116F07200F5B4E5 /* CTPanoramaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8202AE9A2116F07200F5B4E5 /* CTPanoramaView.swift */; };
+		8202AE9D2116F5F700F5B4E5 /* MainDealsViewPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8202AE9C2116F5F700F5B4E5 /* MainDealsViewPager.swift */; };
+		8202AE9F2116F68B00F5B4E5 /* ViewPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8202AE9E2116F68B00F5B4E5 /* ViewPager.swift */; };
 		8217E4FD20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217E4FC20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift */; };
 		8217E4FF20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217E4FE20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift */; };
 		8217E50120FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217E50020FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift */; };
+		821F91072117190700FC8325 /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F91062117190700FC8325 /* PanoramaViewController.swift */; };
+		821F910921171C1A00FC8325 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F910821171C1A00FC8325 /* ImageViewController.swift */; };
+		821F910B2117388800FC8325 /* AttractionItemsItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F910A2117388800FC8325 /* AttractionItemsItemsViewController.swift */; };
+		821F910D2117391A00FC8325 /* ImagsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F910C2117391A00FC8325 /* ImagsCollectionViewCell.swift */; };
 		821FA73B2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */; };
 		821FA73D21072BA700F9A408 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FA73C21072BA700F9A408 /* PopUpViewController.swift */; };
 		82B447AB20FC7EB2004E6445 /* AirportsSearchResulteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B447AA20FC7EB2004E6445 /* AirportsSearchResulteCell.xib */; };
@@ -161,9 +169,17 @@
 		82007E6620FB72A2009A1EF4 /* PassengerTerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerTerminalViewController.swift; sourceTree = "<group>"; };
 		82007E6820FB72EE009A1EF4 /* GeneralAviationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAviationViewController.swift; sourceTree = "<group>"; };
 		82007E6A20FB732B009A1EF4 /* AllCompaniesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompaniesViewController.swift; sourceTree = "<group>"; };
+		8202AE982116F05800F5B4E5 /* CTPieSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPieSliceView.swift; sourceTree = "<group>"; };
+		8202AE9A2116F07200F5B4E5 /* CTPanoramaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPanoramaView.swift; sourceTree = "<group>"; };
+		8202AE9C2116F5F700F5B4E5 /* MainDealsViewPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDealsViewPager.swift; sourceTree = "<group>"; };
+		8202AE9E2116F68B00F5B4E5 /* ViewPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPager.swift; sourceTree = "<group>"; };
 		8217E4FC20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		8217E4FE20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerTerminalsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8217E50020FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompaniesCollectionViewCell.swift; sourceTree = "<group>"; };
+		821F91062117190700FC8325 /* PanoramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
+		821F910821171C1A00FC8325 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		821F910A2117388800FC8325 /* AttractionItemsItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionItemsItemsViewController.swift; sourceTree = "<group>"; };
+		821F910C2117391A00FC8325 /* ImagsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagsCollectionViewCell.swift; sourceTree = "<group>"; };
 		821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountrysPopUpTableViewCell.swift; sourceTree = "<group>"; };
 		821FA73C21072BA700F9A408 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		82B447AA20FC7EB2004E6445 /* AirportsSearchResulteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportsSearchResulteCell.xib; sourceTree = "<group>"; };
@@ -220,6 +236,7 @@
 		82007DBB20FB322A009A1EF4 /* Easy Gate */ = {
 			isa = PBXGroup;
 			children = (
+				8202AE972116EFFF00F5B4E5 /* PanoramaImages */,
 				82007DDB20FB578C009A1EF4 /* SharedPreference */,
 				82007DDA20FB5788009A1EF4 /* StorageHelper */,
 				82007DD920FB5785009A1EF4 /* Storyboards */,
@@ -250,6 +267,7 @@
 				82007E4E20FB64D3009A1EF4 /* LocationManager.swift */,
 				82007E5020FB64DA009A1EF4 /* Helper.swift */,
 				82007E5220FB64E9009A1EF4 /* LanguageManager.swift */,
+				8202AE9E2116F68B00F5B4E5 /* ViewPager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -395,6 +413,7 @@
 				821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */,
 				82EA6E592111C6ED00A285BA /* FromTableViewCell.swift */,
 				82EA6E5F2111D9BD00A285BA /* ToTableViewCell.swift */,
+				821F910C2117391A00FC8325 /* ImagsCollectionViewCell.swift */,
 			);
 			name = TableViewCells;
 			path = "New Group1";
@@ -535,8 +554,21 @@
 				82EA6E552111C45200A285BA /* FromePopUpViewController.swift */,
 				82EA6E572111C47000A285BA /* ToPopUpViewController.swift */,
 				82EA6E5B2111CACE00A285BA /* CurrencyConversionViewController.swift */,
+				8202AE9C2116F5F700F5B4E5 /* MainDealsViewPager.swift */,
+				821F91062117190700FC8325 /* PanoramaViewController.swift */,
+				821F910821171C1A00FC8325 /* ImageViewController.swift */,
+				821F910A2117388800FC8325 /* AttractionItemsItemsViewController.swift */,
 			);
 			path = Maine;
+			sourceTree = "<group>";
+		};
+		8202AE972116EFFF00F5B4E5 /* PanoramaImages */ = {
+			isa = PBXGroup;
+			children = (
+				8202AE982116F05800F5B4E5 /* CTPieSliceView.swift */,
+				8202AE9A2116F07200F5B4E5 /* CTPanoramaView.swift */,
+			);
+			path = PanoramaImages;
 			sourceTree = "<group>";
 		};
 		F3E60EE5FC294F129EDF4559 /* Frameworks */ = {
@@ -716,9 +748,11 @@
 			files = (
 				82007E3F20FB624B009A1EF4 /* UIImage+Resize.swift in Sources */,
 				82007E1820FB6029009A1EF4 /* AppearenceManager.swift in Sources */,
+				8202AE9B2116F07200F5B4E5 /* CTPanoramaView.swift in Sources */,
 				82007E1420FB5FCC009A1EF4 /* StyleguideHelper.swift in Sources */,
 				82007DEA20FB5A21009A1EF4 /* RoundButton.swift in Sources */,
 				82007E3720FB622A009A1EF4 /* ColorPalette.swift in Sources */,
+				8202AE9F2116F68B00F5B4E5 /* ViewPager.swift in Sources */,
 				82007DE620FB5A0E009A1EF4 /* GradientProgressBar.swift in Sources */,
 				82007E0120FB5DE4009A1EF4 /* FormItemView.swift in Sources */,
 				82007DBD20FB322A009A1EF4 /* AppDelegate.swift in Sources */,
@@ -736,11 +770,14 @@
 				82007E0320FB5E1F009A1EF4 /* Example.swift in Sources */,
 				82007E1F20FB610A009A1EF4 /* NibLoadable.swift in Sources */,
 				82007DDF20FB595A009A1EF4 /* RealmManager.swift in Sources */,
+				821F910921171C1A00FC8325 /* ImageViewController.swift in Sources */,
+				8202AE9D2116F5F700F5B4E5 /* MainDealsViewPager.swift in Sources */,
 				82007E0A20FB5E9F009A1EF4 /* BaseService.swift in Sources */,
 				82007E2920FB617B009A1EF4 /* LanguageEnum.swift in Sources */,
 				82007E5320FB64E9009A1EF4 /* LanguageManager.swift in Sources */,
 				82007E1220FB5FC1009A1EF4 /* Styleguide.swift in Sources */,
 				82007DFA20FB5C68009A1EF4 /* DatePickerView.swift in Sources */,
+				821F910B2117388800FC8325 /* AttractionItemsItemsViewController.swift in Sources */,
 				82007E4320FB6272009A1EF4 /* TexitField+Util.swift in Sources */,
 				821FA73D21072BA700F9A408 /* PopUpViewController.swift in Sources */,
 				82007E4120FB626A009A1EF4 /* View+Util.swift in Sources */,
@@ -749,6 +786,7 @@
 				82007E4920FB6448009A1EF4 /* Number+Scale.swift in Sources */,
 				82007E3D20FB6245009A1EF4 /* Image+AssetIdentifier.swift in Sources */,
 				82007E6320FB7211009A1EF4 /* GeneralInfoViewController.swift in Sources */,
+				8202AE992116F05800F5B4E5 /* CTPieSliceView.swift in Sources */,
 				82007DEE20FB5A31009A1EF4 /* RoundView.swift in Sources */,
 				82007E4720FB6440009A1EF4 /* String+Util.swift in Sources */,
 				82007E1020FB5F41009A1EF4 /* ResponseData.swift in Sources */,
@@ -757,6 +795,7 @@
 				82007E4520FB6439009A1EF4 /* Notification+Name.swift in Sources */,
 				82007DF020FB5A42009A1EF4 /* ScalableButton.swift in Sources */,
 				82007E2F20FB620C009A1EF4 /* UIViewController+Util.swift in Sources */,
+				821F91072117190700FC8325 /* PanoramaViewController.swift in Sources */,
 				82007DF420FB5AC4009A1EF4 /* ScalableLabel.swift in Sources */,
 				82007E4D20FB64CC009A1EF4 /* Validation.swift in Sources */,
 				82007E3920FB6235009A1EF4 /* UIImage+Gif.swift in Sources */,
@@ -772,6 +811,7 @@
 				821FA73B2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift in Sources */,
 				82EA6E562111C45200A285BA /* FromePopUpViewController.swift in Sources */,
 				82007E1A20FB6031009A1EF4 /* GlobalManager.swift in Sources */,
+				821F910D2117391A00FC8325 /* ImagsCollectionViewCell.swift in Sources */,
 				82007E0C20FB5EA6009A1EF4 /* ExampleService.swift in Sources */,
 				82007E6520FB7245009A1EF4 /* TerminalServicesViewController.swift in Sources */,
 				82007E5120FB64DA009A1EF4 /* Helper.swift in Sources */,
