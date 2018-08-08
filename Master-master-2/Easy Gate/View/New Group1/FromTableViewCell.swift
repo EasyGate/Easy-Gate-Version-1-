@@ -9,12 +9,12 @@
 import UIKit
 
 class FromTableViewCell: UITableViewCell {
+    
+      // MARK: - IBOutlet
     @IBOutlet weak var FromCurrencyType: ScalableLabel!
-
+ 
+    // MARK: - ViewLifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
-
-
 }

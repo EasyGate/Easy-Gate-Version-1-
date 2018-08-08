@@ -10,17 +10,15 @@ import UIKit
 
 class ToPopUpViewController: UIViewController {
 
-    
     // MARK: - Properites
     var AllAirport = ["Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris" ,"Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris" ,"Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris"]
     
     // MARK: - IBOutlet
     @IBOutlet weak var ToPopUpTableView: UITableView!
     
+    // MARK: - IBAction
     @IBAction func Back(_ sender: UIButton) {
-        
-        self.navigationController?.popViewController(animated: false)}
-    
+    self.navigationController?.popViewController(animated: false)}
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -45,11 +43,4 @@ extension ToPopUpViewController : UITableViewDelegate , UITableViewDataSource{
         cell.ToCurrencyType.text = AllAirport[indexPath.row]
         return cell
     }
-    
-    //ToPopUpViewController
-    
-    
 }
-    
-
-

@@ -9,7 +9,13 @@
 import UIKit
 
 class CurrencyConversionViewController: UIViewController {
+    
+    // MARK: - ViewLifeCycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
+    // MARK: - IBAction
     @IBAction func From(_ sender: ScalableButton) {
         let sb = UIStoryboard(name: "Maine", bundle: nil)
         let controller = sb.instantiateViewController(withIdentifier: "FromePopUpViewController")
@@ -21,6 +27,7 @@ class CurrencyConversionViewController: UIViewController {
         let controller = sb.instantiateViewController(withIdentifier: "ToPopUpViewController")
         self.navigationController?.pushViewController(controller, animated: false)
     }
+    
     @IBAction func Back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)}
     
@@ -29,12 +36,5 @@ class CurrencyConversionViewController: UIViewController {
         let controller = sb.instantiateViewController(withIdentifier: "Home")
         self.navigationController?.pushViewController(controller, animated: true)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-
 }
 

@@ -108,10 +108,7 @@ extension AirportHomeViewController : UICollectionViewDataSource , UICollectionV
             controller = sb.instantiateViewController(withIdentifier: "TerminalServicesD")
             //aa = "Attraction"
             GlobalManager.sharedInstance.CollictionSelected = "Attraction"
-            
-        }
+         }
            self.navigationController?.pushViewController(controller, animated: true)
          }
 }
-
-

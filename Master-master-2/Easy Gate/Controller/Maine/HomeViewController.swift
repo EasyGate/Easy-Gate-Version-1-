@@ -84,7 +84,6 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource{
         else {
             cell.backgroundColor = UIColor.SecondCellColor
         }
-       // cell.AirportName.font = UIFont.systemFont(ofSize: 90.scaledWidth()) 
         return cell
     }
     

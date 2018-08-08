@@ -9,6 +9,14 @@
 import UIKit
 
 class AttractionItemsItemsViewController: UIViewController  {
+    
+    // MARK: - Properites
+    var a = MainDealsViewPager()
+     var   saliderImagesObj = ["q" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" , "q" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" , "q" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" ]
+    
+     // MARK: - IBOutlet
+     @IBOutlet weak var ImagesCollectionView: UICollectionView!
+    
     // MARK: - IBAction
     @IBAction func Back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)}
@@ -18,18 +26,16 @@ class AttractionItemsItemsViewController: UIViewController  {
         let controller = sb.instantiateViewController(withIdentifier: "Home")
         self.navigationController?.pushViewController(controller, animated: true)
     }
-   var   saliderImagesObj = ["q" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" , "q" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" , "q" , "Car" , "5918348-image"  , "q" , "Car" , "5918348-image" ]
     
-    @IBOutlet weak var ImagesCollectionView: UICollectionView!
+  // MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         ImagesCollectionView.delegate = self
         ImagesCollectionView.dataSource = self
     }
-    
-    
 }
 
+// MARK: - extensions
 extension AttractionItemsItemsViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout , UIGestureRecognizerDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,33 +50,15 @@ extension AttractionItemsItemsViewController : UICollectionViewDelegate , UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        return CGSize(width: collectionView.frame.size.width/5, height: collectionView.frame.size.height / 1.3 )
-    }
+        return CGSize(width: collectionView.frame.size.width/5, height: collectionView.frame.size.height / 1.3 ) }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            
-        } else {
-            
-        }
-    }
-//    func collectionView(_ collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                        insetForSectionAt section: Int) -> UIEdgeInsets {
-//        return UIEdgeInsetsMake(0, 0, 0, 0)
-//    }
+         GlobalManager.sharedInstance.selectedImage = indexPath.row  }
 
-    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        
         return UIEdgeInsetsMake(0,
                                 10,
                                 0,
-                                0) }
-    
-    
-    
-}
-
+                                0) }}

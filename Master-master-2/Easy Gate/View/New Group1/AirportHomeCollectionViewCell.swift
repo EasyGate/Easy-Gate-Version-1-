@@ -9,8 +9,9 @@
 import UIKit
 
 class AirportHomeCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - IBOutlet
     @IBOutlet weak var Imge: UIImageView!
     @IBOutlet weak var AirportHomeLabel: UILabel!
-    
-    
 }
+

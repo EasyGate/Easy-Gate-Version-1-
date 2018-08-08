@@ -13,7 +13,7 @@ class GlobalManager: NSObject {
     static let sharedInstance = GlobalManager()
     
     
-    public var selectedImage: Int = 0
+    public var selectedImage: Int = 4
     public var CollictionSelected: String = ""
     
     

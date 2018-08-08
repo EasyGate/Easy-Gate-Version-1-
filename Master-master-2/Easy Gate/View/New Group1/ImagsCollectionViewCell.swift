@@ -9,6 +9,6 @@
 import UIKit
 
 class ImagsCollectionViewCell: UICollectionViewCell {
-    
+    // MARK: - IBOutlet
     @IBOutlet weak var CollectionImage: UIImageView!
 }

@@ -10,16 +10,15 @@ import UIKit
 
 class FromePopUpViewController: UIViewController {
 
- 
     // MARK: - Properites
     var AllAirport = ["Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris" ,"Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris" ,"Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris"]
     
     // MARK: - IBOutlet
     @IBOutlet weak var FromePopUpTableView: UITableView!
     
+     // MARK: - IBAction
     @IBAction func Back(_ sender: UIButton) {
-      
-            self.navigationController?.popViewController(animated: false)}
+      self.navigationController?.popViewController(animated: false)}
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -44,33 +43,4 @@ extension FromePopUpViewController : UITableViewDelegate , UITableViewDataSource
         cell.FromCurrencyType.text = AllAirport[indexPath.row]
         return cell
     }
-    
-
-    
-
 }
-
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let sb = UIStoryboard(name: "Maine", bundle: nil)
-//        let controller = sb.instantiateViewController(withIdentifier: "Home") as! HomeViewController
-//
-//        let unique = Array(Set(AllAirport.filter({$0 == AllAirport[indexPath.row]})))
-//
-//        controller.filterdArray = unique
-//        self.navigationController?.pushViewController(controller, animated: false)
-//        //        GlobalManager.sharedInstance.selectedContry = AllAirport[indexPath.row]
-//        print(select)
-//    }
-//}
-//extension Array where Element : Equatable {
-//    var unique: [Element] {
-//        var uniqueValues: [Element] = []
-//        forEach { item in
-//            if !uniqueValues.contains(item) {
-//                uniqueValues += [item]
-//            }
-//        }
-//        return uniqueValues
-//    }
-//}
-//
