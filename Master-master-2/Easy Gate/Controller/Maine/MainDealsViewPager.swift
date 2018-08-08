@@ -74,7 +74,8 @@ extension MainDealsViewPager: ViewPagerDataSource{
         return newView!
     }
     func didSelectedItem(index: Int) {
-        if index == 0 {
+        if index == 0  || index == 1
+        {
             let sb = UIStoryboard(name: "Maine", bundle: nil)
             let controller = sb.instantiateViewController(withIdentifier: "PanoramaViewController")
             self.navigationController?.pushViewController(controller, animated: true)

@@ -1505,13 +1505,13 @@
                                                         <rect key="frame" x="225.66666666666663" y="0.0" width="64" height="53.666666666666664"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="uOX-r8-dlN">
-                                                                <rect key="frame" x="5.3333333333333108" y="0.0" width="53.666666666666657" height="53.666666666666664"/>
+                                                                <rect key="frame" x="5.6666666666666821" y="0.0" width="53.666666666666657" height="53.666666666666664"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="uOX-r8-dlN" secondAttribute="height" multiplier="1:1" id="xWY-4a-ruc"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjE-0z-a6K">
-                                                                <rect key="frame" x="1" y="0.0" width="64" height="53.666666666666664"/>
+                                                                <rect key="frame" x="0.33333333333331439" y="0.0" width="64" height="53.666666666666664"/>
                                                                 <connections>
                                                                     <action selector="Uber:" destination="dgP-0q-tRQ" eventType="touchUpInside" id="VNl-Ld-BtG"/>
                                                                 </connections>
@@ -3229,7 +3229,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9DQ-kC-jdu">
                                         <rect key="frame" x="0.0" y="568.33333333333337" width="414" height="133"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2x-F7-KK2" customClass="ScalableTextView" customModule="Easy_Gate" customModuleProvider="target">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2x-F7-KK2" customClass="ScalableTextView" customModule="Easy_Gate" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="394" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLa</string>
