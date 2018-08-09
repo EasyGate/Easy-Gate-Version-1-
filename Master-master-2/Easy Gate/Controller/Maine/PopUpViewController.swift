@@ -11,16 +11,34 @@ import UIKit
 class PopUpViewController: UIViewController {
     
     // MARK: - Properites
+    var filterdArray = [String]()
  var AllAirport = ["Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris" ,"Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris" ,"Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris"]
     
     // MARK: - IBOutlet
      @IBOutlet weak var AllCountrysTableView: UITableView!
+     @IBOutlet weak var CountriesSearsh: UISearchBar!
+    
+    // MARK: - IBOutlet
+    @IBAction func Close(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Maine", bundle: nil)
+        let controller = sb.instantiateViewController(withIdentifier: "Home")
+        self.navigationController?.pushViewController(controller, animated: false)
+    }
     
     // MARK: - ViewLifeCycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AllCountrysTableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         AllCountrysTableView.dataSource = self
         AllCountrysTableView.delegate = self
+        CountriesSearsh.delegate = self
+        if filterdArray.count < 0 {
+            filterdArray = AllAirport
+        }
     }
 }
 
@@ -61,5 +79,23 @@ extension Array where Element : Equatable {
             }
         }
         return uniqueValues
+    }
+}
+
+extension PopUpViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterdArray = AllAirport
+        filterdArray = filterdArray.filter({$0.lowercased().contains(searchText.lowercased())})
+        
+        if searchText.count == 0 {
+            filterdArray = AllAirport
+            self.AllCountrysTableView.isHidden = true
+        } else {
+            self.AllCountrysTableView.isHidden = false
+
+        }
+        
+        filterdArray = filterdArray.sorted(by: {$0 < $1})
+        AllCountrysTableView.reloadData()
     }
 }

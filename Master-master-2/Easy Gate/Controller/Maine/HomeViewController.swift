@@ -31,13 +31,13 @@ class HomeViewController: UIViewController {
         
     }
     
-    
+    // MARK: - ViewLifeCycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.AirportsSearchResulteTableView.isHidden = false
         AirportsSearchResulteTableView.reloadData()
     }
-    // MARK: - ViewLifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        searchbar.delegate = self
